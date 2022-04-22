@@ -1,9 +1,9 @@
 # bot6-Telegram-Cash-Expenses-Tracker
-A bot for tracking my personal cash expenses. <br>
+A bot for saving my cash expenses to a budget table. <br>
 
 <h2>How to use the bot:</h2>
 <ul>
-  <li>Enter manually in the bot interface your expense description and price, separated with a comma. Ex.: 'Bananas, 2'.</li>
+  <li>Enter manually (in the bot interface) your expense description and price, separated with a comma. Ex.: 'Bananas, 2'.</li>
   <li>Select a predefined category of your expense: press one of the appeared buttons. Ex.: 'Grocery' button.</li>
   <li>The bot saves your input as a new row in the budget table (Google Sheets).</li>
 </ul>
