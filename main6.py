@@ -33,7 +33,7 @@ data6 = data6.astype({"Expenses" : "float64"})
 data6.Date = pd.to_datetime(data6.Date)
 
 
-# Handle incoming messages and offer 'categories' of expenses to choose from:
+# Handle incoming messages & offer 'categories' of expenses to choose from:
 def enter_expenses(update, context):   
     input1 = update.message.text.split(",")   
     try:
@@ -55,7 +55,7 @@ def enter_expenses(update, context):
 # Save the expense to the Google Sheets table after the button in the bot is pushed: 
 def callback_query_handler(update, context):
     bot6.delete_message(update.callback_query.message.chat_id, str(update.callback_query.message.message_id))  # (?!) (during testing) Try to delete this line & check what will be changed
-    # Refresh connection with Google Sheets and data: 
+    # Refresh connection with Google Sheets: 
     client6 = gspread.authorize(creds6)
     my_sheet6 = client6.open("NAME_OF_YOUR_SPREADSHEET").sheet1   # Substitute "NAME_OF_YOUR_SPREADSHEET" phrase with the name of your Google Sheets file
     records6 = my_sheet6.get_all_records()
