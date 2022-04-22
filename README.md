@@ -1,5 +1,5 @@
 # bot6-Telegram-Cash-Expenses-Tracker
-A bot for saving my cash expenses to a budget table. <br>
+A Telegram bot for saving my cash expenses to a budget table. <br>
 
 <h2>How to use the bot:</h2>
 <ul>
@@ -10,7 +10,7 @@ A bot for saving my cash expenses to a budget table. <br>
 
 <h2>Create a new Telegram bot:</h2>
 <ul>
-  <li>Intall <a href="https://telegram.org/">Telegram</a> (if you don't have it yet) & open it.</li>
+  <li>Install <a href="https://telegram.org/">Telegram</a> (if you don't have it yet) & open it.</li>
   <li>Register your new Bot with Telegram's official tool - <a href="https://telegram.me/BotFather">BotFather.</a></li>
   <li>Follow <a href="https://telegram.me/BotFather">BotFather's</a> instructions, get a Token (keep it safe) to access Telegram API.</li>  
 </ul>
@@ -29,7 +29,7 @@ A bot for saving my cash expenses to a budget table. <br>
   <li>In your Google Sheets spreadsheet press “Share" (big green button in the right top) & paste that email address to add it as “editor”.</li>
 </ul>
 
-<h2>Makeadjustments:</h2>
+<h2>Make adjustments:</h2>
 <ul>
   <li>Make substitutions in the code of <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> file: "/PATH"; "/NAME_OF_YOUR_JSON_FILE.json"; "BOT_TOKEN"; "NAME_OF_YOUR_SPREADSHEET".</li>
   <li>In Google Sheets table: give manually names to columns according to your needs (I used 4 columns: Date; Expenses; Category; Comments).</li>
