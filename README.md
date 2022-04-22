@@ -1,6 +1,5 @@
 # bot6-Telegram-Cash-Expenses-Tracker
-I'm currently building a bot for tracking my cash expenses. <br>
-
+A bot for tracking my personal cash expenses. <br>
 
 <h2>How to use the bot:</h2>
 <ul>
@@ -30,11 +29,11 @@ I'm currently building a bot for tracking my cash expenses. <br>
   <li>In your Google Sheets spreadsheet press “Share" (big green button in the right top) & paste that email address to add it as “editor”.</li>
 </ul>
 
-<h2>:</h2>
+<h2>Final adjustments:</h2>
 <ul>
   <li>Make substitutions in the code of <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> file: "/PATH"; "/NAME_OF_YOUR_JSON_FILE.json"; "BOT_TOKEN"; "NAME_OF_YOUR_SPREADSHEET".</li>
   <li>In Google Sheets table: give manually names to columns according to your needs (I used 4 columns: Date; Expenses; Category; Comments).</li>
-  <li>Confirm the names & quantity & order of columns in Google Sheets table match with the code in <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> file.</li>
+  <li>Confirm the columns in Google Sheets table match with the code in <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> file (quantity, order, names, content type).</li>
   <li>Run <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> program & start using the bot.</li>
 </ul>
 
