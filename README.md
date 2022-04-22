@@ -2,6 +2,20 @@
 I'm currently building a bot for tracking my cash expenses. <br>
 Will publish the code here in the second half of April 2022. 
 
+<h2>How to use the bot:</h2>
+<ul>
+  <li>Enter manually in the bot interface your expense description and price, separated with a comma. Ex.: 'Bananas, 2'.</li>
+  <li>Select a predefined category of your expense: press one of the appeared buttons. Ex.: 'Grocery' button.</li>
+  <li>The bot saves your input as a new row in the budget table (Google Sheet).</li>
+</ul>
+
+<h2>Create a new Telegram bot:</h2>
+<ul>
+  <li>Intall <a href="https://telegram.org/">Telegram</a> (if you don't have it yet) & open it.</li>
+  <li>Register your new Bot with Telegram's official tool - <a href="https://telegram.me/BotFather">BotFather.</a></li>
+  <li>Follow <a href="https://telegram.me/BotFather">BotFather's</a> instructions, get a Token (keep it safe) to access Telegram API.</li>  
+</ul>
+
 <h2>Access Google Sheets API:</h2>
 <ul>
   <li>Create a new spreadsheet via <a href="https://www.google.com/sheets/about/">Google Sheets</a> (a Google account is necessary). Fill in some data in the cells.</li>
@@ -16,16 +30,7 @@ Will publish the code here in the second half of April 2022.
   <li>In your Google Sheets spreadsheet press “Share" (big green button in the right top) & paste that email address to add it as “editor”.</li>
 </ul>
 
-<h2>Create a Telegram bot:</h2>
-<ul>
-  <li>Intall <a href="https://telegram.org/">Telegram</a> (if you don't have it yet) & open it.</li>
-  <li>Register your new Bot with Telegram's official tool - <a href="https://telegram.me/BotFather">BotFather.</a></li>
-  <li>Follow <a href="https://telegram.me/BotFather">BotFather's</a> instructions, get a Token (keep it safe) to access Telegram API.</li>  
-</ul>
+<li>In Google Sheets table: give manually names to columns according to your needs. Ex.: Date; Expenses; Category; Comments </li>
+<li>Make necessary substitutions in the code of <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> file Ex.: "/PATH"; "/NAME_OF_YOUR_JSON_FILE.json"; "BOT_TOKEN"; "NAME_OF_YOUR_SPREADSHEET"</li>
+<li>Run <a href="https://github.com/DS-jr/bot6-Telegram-Cash-Expenses-Tracker/blob/main/main6.py">main6.py</a> program & start using the bot</li>
 
-<h2>How the bot works:</h2>
-<ul>
-  <li>Enter manually your expense description and price, separated with a comma. Ex.: 'Bananas, 2'.</li>
-  <li>Select a predefined category of your expense: press one of the appeared buttons. Ex.: 'Grocery' button.</li>
-  <li>The bot saves your input as a new row in the budget table (Google Sheet).</li>
-</ul>
