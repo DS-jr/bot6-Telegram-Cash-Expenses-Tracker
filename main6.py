@@ -51,7 +51,23 @@ def enter_expenses(update, context):
     keyboard = telegram.InlineKeyboardMarkup(buttons)   # Creating a keyboard
     bot6.send_message(update.message.chat_id, update.message.text, reply_markup=keyboard)
 
-# ... 
+         
+# Save the expense to the Google Sheets table after the button in the bot is pushed:
+def callback_query_handler(update, context):
+    bot6.delete_message(update.callback_query.message.chat_id, str(update.callback_query.message.message_id))  # (?!) (during testing) Try to delete this line & check what will be changed
+    # Refresh connection with Google Sheets and data:
+    client6 = gspread.authorize(creds6)
+    my_sheet6 = client6.open("NAME_OF_YOUR_SPREADSHEET").sheet1   # Substitute "NAME_OF_YOUR_SPREADSHEET" phrase with the name of your Google Sheets file
+    records6 = my_sheet6.get_all_records()
+
+    splitted_values = update.callback_query.data.split('=')
+    Date1 = str(datetime.strptime(splitted_values[1].split('+')[0], "%Y-%m-%d %H:%M:%S").strftime("%d/%b/%Y"))
+    Expenses1 = splitted_values[2]
+    Category1 = splitted_values[3]
+    Comments1 = splitted_values[4]
+    row1 = [Date1, Expenses1, Category1, Comments1]
+    my_sheet6.insert_row(row1, len(records6) + 2)   #  Add a row  
+    bot6.send_message(update.callback_query.message.chat_id, "saVed: " + Expenses1 + ", " + Category1 + ", " + Comments1)
 
 
 # Create bot object:
