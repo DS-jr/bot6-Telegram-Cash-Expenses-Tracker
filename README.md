@@ -11,7 +11,7 @@ A Telegram bot for saving cash expenses to a budget table. <br>
 <h2>Create a new Telegram bot:</h2>
 <ul>
   <li>Install <a href="https://telegram.org/">Telegram</a> (if you don't have it yet) & open it.</li>
-  <li>Register your new Bot with Telegram's official tool - <a href="https://telegram.me/BotFather">BotFather.</a></li>
+  <li>Register your new Bot with Telegram's official tool - <a href="https://telegram.me/BotFather">BotFather</a>.</li>
   <li>Follow <a href="https://telegram.me/BotFather">BotFather's</a> instructions, get a Token (keep it safe) to access Telegram API.</li>  
 </ul>
 
