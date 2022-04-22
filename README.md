@@ -1,5 +1,5 @@
 # bot6-Telegram-Cash-Expenses-Tracker
-A Telegram bot for saving my cash expenses to a budget table. <br>
+A Telegram bot for saving cash expenses to a budget table. <br>
 
 <h2>How to use the bot:</h2>
 <ul>
